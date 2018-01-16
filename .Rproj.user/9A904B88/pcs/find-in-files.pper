@@ -1,0 +1,10 @@
+{
+    "dialog-state" : {
+        "caseSensitive" : false,
+        "filePatterns" : [
+        ],
+        "path" : "~/Google drive/41/R_pkg/RcppMovStat",
+        "query" : "@useDynLib",
+        "regex" : false
+    }
+}

@@ -1,0 +1,192 @@
+rm[K[Krm .git
+rm: .git: is a directory
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ rm -rf .git
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ git init
+Initialized empty Git repository in /Users/LZQ/OneDrive - Tulane University/41/R_pkg/.git/
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ nigt[K[K[K[Kgit add .
+warning: adding embedded git repository: RcppMovStat
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> RcppMovStat
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached RcppMovStat
+hint: 
+hint: See "git help submodule" for more information.
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ gir [K[Kt -b[K[Kbranch -b msater[K[K[K[K[Kaster
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      Unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    --list                list branch names
+    -l, --create-reflog   create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ git checkout -b mat[Kster
+Switched to a new branch 'master'
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ git add . [K
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ git cmo[K[Kommit "FIrs[K[K[Kirst Cmoo[K[K[Kommit"
+error: pathspec 'First Commit' did not match any file(s) known to git.
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ git commit "First Commit"[C[C[1@ [1@-[1@m
+[master (root-commit) d4e7cd6] First Commit
+ 83 files changed, 31399 insertions(+)
+ create mode 100755 RMS_pkgRef2/.gitignore
+ create mode 100755 RMS_pkgRef2/RQuanCpp.R
+ create mode 100755 RMS_pkgRef2/Rcpp.R
+ create mode 100755 RMS_pkgRef2/RollStatRcpp.Rproj
+ create mode 100755 RMS_pkgRef2/Untitled.cpp
+ create mode 100755 RMS_pkgRef2/nullNumVecTest.cpp
+ create mode 100755 RMS_pkgRef2/rollCountNA.cpp
+ create mode 100755 RMS_pkgRef2/rollCountNAUneven.cpp
+ create mode 100755 RMS_pkgRef2/rollCountSamp.cpp
+ create mode 100755 RMS_pkgRef2/rollMean.cpp
+ create mode 100755 RMS_pkgRef2/rollMeanNA.cpp
+ create mode 100755 RMS_pkgRef2/rollMeanNAUneven.cpp
+ create mode 100755 RMS_pkgRef2/rollMeanSamp.cpp
+ create mode 100755 RMS_pkgRef2/rollMean_v1.cpp
+ create mode 100755 RMS_pkgRef2/rollQuantile.cpp
+ create mode 100755 RMS_pkgRef2/rollQuantileNA.cpp
+ create mode 100755 RMS_pkgRef2/rollQuantileNAUneven.cpp
+ create mode 100755 RMS_pkgRef2/rollQuantileSamp.cpp
+ create mode 100755 RMS_pkgRef2/rollQuantile_1.cpp
+ create mode 100755 RMS_pkgRef2/rollSumNA.cpp
+ create mode 100755 RMS_pkgRef2/rollSumNAUneven.cpp
+ create mode 160000 RcppMovStat
+ create mode 100755 movStatRcpp/.Rhistory
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/console06/11746C50
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/console06/11746C50.env
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/console06/INDEX001
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/pcs/files-pane.pper
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/pcs/source-pane.pper
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/pcs/windowlayoutstate.pper
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/pcs/workbench-pane.pper
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/rmd-outputs
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/saved_source_markers
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/per/t/154EC2CA
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/per/t/154EC2CA-contents
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/per/t/A30864D7
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/per/t/A30864D7-contents
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/per/t/BE98E63A
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/per/t/BE98E63A-contents
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/per/t/C7783CDC
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/per/t/C7783CDC-contents
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/prop/235955C8
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/prop/23DD16AD
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/prop/28937A4
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/prop/433DD1AC
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/prop/BF4D9B47
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/prop/F5F72C57
+ create mode 100755 movStatRcpp/.Rproj.user/9A904B88/sources/prop/INDEX
+ create mode 100755 movStatRcpp/.Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100755 movStatRcpp/.Rproj.user/shared/notebooks/paths
+ create mode 100755 movStatRcpp/movCount.cpp
+ create mode 100755 movStatRcpp/movEmean.cpp
+ create mode 100755 movStatRcpp/movMean.cpp
+ create mode 100755 movStatRcpp/movQt.cpp
+ create mode 100755 movStatRcpp/movStatRcpp.Rproj
+ create mode 100755 movStatRcpp/movSum.cpp
+ create mode 100755 movStatRcpp/rollMean.cpp
+ create mode 100755 movStatRcpp/rollMeanNA.cpp
+ create mode 100755 movStatRcpp/rollMean_v1.cpp
+ create mode 100755 movStatRcpp/rollStat.R
+ create mode 100755 sparkLyr/.Rhistory
+ create mode 100755 sparkLyr/.Rproj.user/9A904B88/console06/INDEX001
+ create mode 100755 sparkLyr/.Rproj.user/9A904B88/pcs/debug-breakpoints.pper
+ create mode 100755 sparkLyr/.Rproj.user/9A904B88/pcs/files-pane.pper
+ create mode 100755 sparkLyr/.Rproj.user/9A904B88/pcs/source-pane.pper
+ create mode 100755 sparkLyr/.Rproj.user/9A904B88/pcs/windowlayoutstate.pper
+ create mode 100755 sparkLyr/.Rproj.user/9A904B88/pcs/workbench-pane.pper
+ create mode 100755 sparkLyr/.Rproj.user/9A904B88/rmd-outputs
+ create mode 100755 sparkLyr/.Rproj.user/9A904B88/saved_source_markers
+ create mode 100755 sparkLyr/.Rproj.user/9A904B88/sources/per/t/B96DCE75
+ create mode 100755 sparkLyr/.Rproj.user/9A904B88/sources/per/t/B96DCE75-contents
+ create mode 100755 sparkLyr/.Rproj.user/9A904B88/sources/prop/97223D81
+ create mode 100755 sparkLyr/.Rproj.user/9A904B88/sources/prop/INDEX
+ create mode 100755 sparkLyr/.Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100755 sparkLyr/.Rproj.user/shared/notebooks/paths
+ create mode 100755 sparkLyr/Intro.R
+ create mode 100755 sparkLyr/derby.log
+ create mode 100755 sparkLyr/logs/log4j.spark.log
+ create mode 100755 sparkLyr/logs/log4j.spark.log.2017-12-12
+ create mode 100755 sparkLyr/logs/log4j.spark.log.2017-12-13
+ create mode 100755 sparkLyr/sparkLyr.Rproj
+ create mode 100755 test.R
+ create mode 100755 webSite/.gitignore
+ create mode 100755 webSite/webSite.Rproj
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ git remote 
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ git ar[K[Kremote[K[K[Ket[K[Kote add [K[K[K[Korigin add https://github.com/peleonard/RcppMovStat.git
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ git remote origin add https://github.com/peleonard/RcppMovStat.git[C[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C https://github.com/peleonard/RcppMovStat.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co https://github.com/peleonard/RcppMovStat.gitr https://github.com/peleonard/RcppMovStat.giti https://github.com/peleonard/RcppMovStat.gitg https://github.com/peleonard/RcppMovStat.giti https://github.com/peleonard/RcppMovStat.gitn https://github.com/peleonard/RcppMovStat.git[C https://github.com/peleonard/RcppMovStat.git
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ t[Kgit push -f https://github.com/peleonard/RcppMovStat.git master
+Counting objects: 93, done.
+Delta compression using up to 8 threads.
+Compressing objects:   1% (1/81)   Compressing objects:   2% (2/81)   Compressing objects:   3% (3/81)   Compressing objects:   4% (4/81)   Compressing objects:   6% (5/81)   Compressing objects:   7% (6/81)   Compressing objects:   8% (7/81)   Compressing objects:   9% (8/81)   Compressing objects:  11% (9/81)   Compressing objects:  12% (10/81)   Compressing objects:  13% (11/81)   Compressing objects:  14% (12/81)   Compressing objects:  16% (13/81)   Compressing objects:  17% (14/81)   Compressing objects:  18% (15/81)   Compressing objects:  19% (16/81)   Compressing objects:  20% (17/81)   Compressing objects:  22% (18/81)   Compressing objects:  23% (19/81)   Compressing objects:  24% (20/81)   Compressing objects:  25% (21/81)   Compressing objects:  27% (22/81)   Compressing objects:  28% (23/81)   Compressing objects:  29% (24/81)   Compressing objects:  30% (25/81)   Compressing objects:  32% (26/81)   Compressing objects:  33% (27/81)   Compressing objects:  34% (28/81)   Compressing objects:  35% (29/81)   Compressing objects:  37% (30/81)   Compressing objects:  38% (31/81)   Compressing objects:  39% (32/81)   Compressing objects:  40% (33/81)   Compressing objects:  41% (34/81)   Compressing objects:  43% (35/81)   Compressing objects:  44% (36/81)   Compressing objects:  45% (37/81)   Compressing objects:  46% (38/81)   Compressing objects:  48% (39/81)   Compressing objects:  49% (40/81)   Compressing objects:  50% (41/81)   Compressing objects:  51% (42/81)   Compressing objects:  53% (43/81)   Compressing objects:  54% (44/81)   Compressing objects:  55% (45/81)   Compressing objects:  56% (46/81)   Compressing objects:  58% (47/81)   Compressing objects:  59% (48/81)   Compressing objects:  60% (49/81)   Compressing objects:  61% (50/81)   Compressing objects:  62% (51/81)   Compressing objects:  64% (52/81)   Compressing objects:  65% (53/81)   Compressing objects:  66% (54/81)   Compressing objects:  67% (55/81)   Compressing objects:  69% (56/81)   Compressing objects:  70% (57/81)   Compressing objects:  71% (58/81)   Compressing objects:  72% (59/81)   Compressing objects:  74% (60/81)   Compressing objects:  75% (61/81)   Compressing objects:  76% (62/81)   Compressing objects:  77% (63/81)   Compressing objects:  79% (64/81)   Compressing objects:  80% (65/81)   Compressing objects:  81% (66/81)   Compressing objects:  82% (67/81)   Compressing objects:  83% (68/81)   Compressing objects:  85% (69/81)   Compressing objects:  86% (70/81)   Compressing objects:  87% (71/81)   Compressing objects:  88% (72/81)   Compressing objects:  90% (73/81)   Compressing objects:  91% (74/81)   Compressing objects:  92% (75/81)   Compressing objects:  93% (76/81)   Compressing objects:  95% (77/81)   Compressing objects:  96% (78/81)   Compressing objects:  97% (79/81)   Compressing objects:  98% (80/81)   Compressing objects: 100% (81/81)   Compressing objects: 100% (81/81), done.
+Writing objects:   1% (1/93)   Writing objects:   2% (2/93)   Writing objects:   3% (3/93)   Writing objects:   4% (4/93)   Writing objects:   5% (5/93)   Writing objects:   6% (6/93)   Writing objects:   7% (7/93)   Writing objects:   8% (8/93)   Writing objects:   9% (9/93)   Writing objects:  11% (11/93)   Writing objects:  13% (13/93)   Writing objects:  16% (15/93)   Writing objects:  17% (16/93)   Writing objects:  18% (17/93)   Writing objects:  19% (18/93)   Writing objects:  20% (19/93)   Writing objects:  22% (21/93)   Writing objects:  23% (22/93)   Writing objects:  24% (23/93)   Writing objects:  25% (24/93)   Writing objects:  26% (25/93)   Writing objects:  27% (26/93)   Writing objects:  29% (27/93)   Writing objects:  30% (28/93)   Writing objects:  31% (29/93)   Writing objects:  32% (30/93)   Writing objects:  33% (31/93)   Writing objects:  34% (32/93)   Writing objects:  35% (33/93)   Writing objects:  36% (34/93)   Writing objects:  37% (35/93)   Writing objects:  38% (36/93)   Writing objects:  39% (37/93)   Writing objects:  40% (38/93)   Writing objects:  41% (39/93)   Writing objects:  43% (40/93)   Writing objects:  44% (41/93)   Writing objects:  45% (42/93)   Writing objects:  47% (44/93)   Writing objects:  48% (45/93)   Writing objects:  49% (46/93)   Writing objects:  50% (47/93)   Writing objects:  51% (48/93)   Writing objects:  52% (49/93)   Writing objects:  53% (50/93)   Writing objects:  54% (51/93)   Writing objects:  55% (52/93)   Writing objects:  56% (53/93)   Writing objects:  58% (54/93)   Writing objects:  59% (55/93)   Writing objects:  60% (56/93)   Writing objects:  61% (57/93)   Writing objects:  62% (58/93)   Writing objects:  63% (59/93)   Writing objects:  64% (60/93)   Writing objects:  65% (61/93)   Writing objects:  66% (62/93)   Writing objects:  67% (63/93)   Writing objects:  68% (64/93)   Writing objects:  69% (65/93)   Writing objects:  70% (66/93)   Writing objects:  72% (67/93)   Writing objects:  73% (68/93)   Writing objects:  74% (69/93)   Writing objects:  75% (70/93)   Writing objects:  76% (71/93)   Writing objects:  77% (72/93)   Writing objects:  78% (73/93)   Writing objects:  79% (74/93)   Writing objects:  80% (75/93)   Writing objects:  81% (76/93)   Writing objects:  82% (77/93)   Writing objects:  83% (78/93)   Writing objects:  84% (79/93)   Writing objects:  86% (80/93)   Writing objects:  87% (81/93)   Writing objects:  88% (82/93)   Writing objects:  89% (83/93)   Writing objects:  90% (84/93)   Writing objects:  91% (85/93)   Writing objects:  92% (86/93)   Writing objects:  93% (87/93)   Writing objects:  94% (88/93)   Writing objects:  95% (89/93)   Writing objects:  96% (90/93)   Writing objects:  97% (91/93)   Writing objects:  98% (92/93)   Writing objects: 100% (93/93)   Writing objects: 100% (93/93), 126.36 KiB | 634.00 KiB/s, done.
+Total 93 (delta 21), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/21)   [Kremote: Resolving deltas:  23% (5/21)   [Kremote: Resolving deltas:  57% (12/21)   [Kremote: Resolving deltas:  61% (13/21)   [Kremote: Resolving deltas:  66% (14/21)   [Kremote: Resolving deltas:  85% (18/21)   [Kremote: Resolving deltas:  95% (20/21)   [Kremote: Resolving deltas: 100% (21/21)   [Kremote: Resolving deltas: 100% (21/21), done.[K
+To https://github.com/peleonard/RcppMovStat.git
+ + e379e71...d4e7cd6 master -> master (forced update)
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ pwd
+/Users/LZQ/OneDrive - Tulane University/41/R_pkg
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ rm .git[K[K[K[K[K[K[K.[K-f [K[K[Krm -f .[K[K[K[Kr[K-rf .git
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ cd RcppMovStat/
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ rm -rf .git
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ git inti[K[Kit
+Initialized empty Git repository in /Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/.git/
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ git [K[K[K[Kgit initrm -rf .gitcd RcppMovStat/[4Prm -rf .gitpwd[Kgit push -f https://github.com/peleonard/RcppMovStat.git master[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cremote add origin  https://github.com/peleonard/RcppMovStat.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Porigin add[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcommit -m "First Commit"[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@-m [C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"t"[C"[K[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[K[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[C[Kadd .

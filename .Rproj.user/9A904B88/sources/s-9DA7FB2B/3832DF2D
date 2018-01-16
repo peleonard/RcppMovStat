@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1515961829983.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3832DF2D",
+    "lastKnownWriteTime" : 1516074211,
+    "last_content_update" : 1516074211,
+    "path" : "~/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movMean.cpp",
+    "project_path" : "src/movMean.cpp",
+    "properties" : {
+        "cursorPosition" : "113,13",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}

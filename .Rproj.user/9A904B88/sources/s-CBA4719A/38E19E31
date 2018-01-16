@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1516073485803.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3904750412",
+    "id" : "38E19E31",
+    "lastKnownWriteTime" : 1516074257,
+    "last_content_update" : 1516074257963,
+    "path" : "~/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movSum.cpp",
+    "project_path" : "src/movSum.cpp",
+    "properties" : {
+        "cursorPosition" : "34,24",
+        "scrollLine" : "20"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}

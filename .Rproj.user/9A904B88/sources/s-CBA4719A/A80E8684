@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1516073178299.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2137873459",
+    "id" : "A80E8684",
+    "lastKnownWriteTime" : 1516074687,
+    "last_content_update" : 1516074687462,
+    "path" : "~/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movCountUE.cpp",
+    "project_path" : "src/movCountUE.cpp",
+    "properties" : {
+        "cursorPosition" : "30,14",
+        "scrollLine" : "11",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}
