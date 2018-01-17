@@ -21,7 +21,7 @@
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movCount.cpp",
-        "file_last_write" : 1516073586
+        "file_last_write" : 1516074255
     },
     {
         "definitions" : [
@@ -45,7 +45,7 @@
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movCountUE.cpp",
-        "file_last_write" : 1516073418
+        "file_last_write" : 1516074687
     },
     {
         "definitions" : [
@@ -68,7 +68,7 @@
                 "column" : 3,
                 "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movMean.cpp",
                 "kind" : 6,
-                "line" : 46,
+                "line" : 47,
                 "name" : "movMean(NumericVector, int, int, Nullable<NumericVector>, bool, bool, std::string)",
                 "parent_name" : "",
                 "usr" : "c:@F@movMean#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#I#$@N@Rcpp@C@Nullable>#S0_#b#b#$@N@std@N@__1@C@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@C@allocator>#C#"
@@ -77,14 +77,14 @@
                 "column" : 3,
                 "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movMean.cpp",
                 "kind" : 6,
-                "line" : 133,
+                "line" : 134,
                 "name" : "movMeanr(NumericVector, int, int, Nullable<NumericVector>, bool, bool)",
                 "parent_name" : "",
                 "usr" : "c:@F@movMeanr#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#I#$@N@Rcpp@C@Nullable>#S0_#b#b#"
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movMean.cpp",
-        "file_last_write" : 1516073471
+        "file_last_write" : 1516074211
     },
     {
         "definitions" : [
@@ -108,7 +108,7 @@
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movMeanUE.cpp",
-        "file_last_write" : 1516073400
+        "file_last_write" : 1516074598
     },
     {
         "definitions" : [
@@ -132,7 +132,7 @@
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movQt.cpp",
-        "file_last_write" : 1516073522
+        "file_last_write" : 1516074256
     },
     {
         "definitions" : [
@@ -174,7 +174,7 @@
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movQtUE.cpp",
-        "file_last_write" : 1516073408
+        "file_last_write" : 1516074620
     },
     {
         "definitions" : [
@@ -198,7 +198,7 @@
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movSum.cpp",
-        "file_last_write" : 1516073521
+        "file_last_write" : 1516074257
     },
     {
         "definitions" : [
@@ -222,7 +222,7 @@
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movSumUE.cpp",
-        "file_last_write" : 1516073413
+        "file_last_write" : 1516074680
     },
     {
         "definitions" : [
