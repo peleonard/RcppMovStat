@@ -8,4 +8,4 @@ This is a package providing several efficient functions to
     
 Install me with devtools:
 
-    install_github("LEOLI3/RcppMovStat")
+    install_github("peleonard/RcppMovStat")
