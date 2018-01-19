@@ -114,7 +114,7 @@ NumericMatrix
           posVecRq(i, 2) = NA_REAL;
         } else {
           r.resize(k); 
-          auto q = make_quantile_UE(k, prob);
+          quantile_UE q = make_quantile_UE(k, prob);
           vector<double> z(&r[0], &r[0+k]);
           sort(z.begin(), z.end());
           posVecRq(i, 2) = q.hlo * z[q.lo] + q.hhi * z[q.hi]; 
@@ -123,7 +123,7 @@ NumericMatrix
       
     } else {
       // quantile_UE setup
-      auto q = make_quantile_UE(n, prob);
+      quantile_UE q = make_quantile_UE(n, prob);
       for (i = p; i < nrow - n + p + 1; i = i + ss) {
         vector<double> z(&posVecRq(_, 1)[i - p], &posVecRq(_, 1)[i - p + n]);
         bool Ind = false;
@@ -199,7 +199,7 @@ NumericMatrix
           posVecRq(i, 2) = NA_REAL;
         } else {
           r.resize(k);
-          auto q = make_quantile_UE(k, prob);
+          quantile_UE q = make_quantile_UE(k, prob);
           vector<double> z(&r[0], &r[0+k]);
           sort(z.begin(), z.end());
           posVecRq(i, 2) = q.hlo * z[q.lo] + q.hhi * z[q.hi];
@@ -208,7 +208,7 @@ NumericMatrix
 
     } else {
       // quantile_UE setup
-      auto q = make_quantile_UE(n, prob);
+      quantile_UE q = make_quantile_UE(n, prob);
       for (i = n - 1; i < L; i = i + ss) {
         vector<double> z(&posVecRq(_, 1)[i - n + 1], &posVecRq(_, 1)[i + 1]);
         bool Ind = false;
