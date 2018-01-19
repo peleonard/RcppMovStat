@@ -143,3 +143,142 @@ fatal: A branch named 'v1.0.1' already exists.
   master[m
 * [32mv1.0.1[m
 ]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ git add .
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ git cm[Kommit -m "upda[K[K[K[Kliit[K[Kttle upt[Kdate readme"
+[v1.0.1 44b304d] little update readme
+ 65 files changed, 218 insertions(+), 5066 deletions(-)
+ create mode 100644 .Rbuildignore
+ rewrite .Rproj.user/9A904B88/console06/E9FF60BB (98%)
+ rewrite .Rproj.user/9A904B88/console06/INDEX001 (100%)
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/120218B7-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/1DBAE4FD
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/1DBAE4FD-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/27286B1D
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/27286B1D-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/2D267299
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/2D267299-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/3832DF2D
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/3832DF2D-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/3F22C13-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/47F46A9A
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/47F46A9A-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/5D324B61-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/63919F1A-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/7D07EC95
+ delete mode 100755 .Rproj.user/9A904B88/sources/s-9DA7FB2B/7D07EC95-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/8DBE79AE-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/AEEFE92C-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/D3158E1E-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/E7A4FDD2-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-9DA7FB2B/lock_file
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/1EDD7E3
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/1EDD7E3-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/251BADA-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/33087DDE-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/38E19E31
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/38E19E31-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/415A8184
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/415A8184-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/561AC58-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/74ABD7A6
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/74ABD7A6-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/8D35BEB2
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/8D35BEB2-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/963B89BE-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/9CE939F8
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/9CE939F8-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/A80E8684
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/A80E8684-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/D1737ED8-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/D795DFF1
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/D795DFF1-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/EFB9D82C-contents
+ delete mode 100644 .Rproj.user/9A904B88/sources/s-CBA4719A/lock_file
+ create mode 100644 .gitignore
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ a[Kgit pu[Kush iri[K[K[Korigin v1.1[K0.1
+Counting objects: 29, done.
+Delta compression using up to 8 threads.
+Compressing objects:   3% (1/26)   Compressing objects:   7% (2/26)   Compressing objects:  11% (3/26)   Compressing objects:  15% (4/26)   Compressing objects:  19% (5/26)   Compressing objects:  23% (6/26)   Compressing objects:  26% (7/26)   Compressing objects:  30% (8/26)   Compressing objects:  34% (9/26)   Compressing objects:  38% (10/26)   Compressing objects:  42% (11/26)   Compressing objects:  46% (12/26)   Compressing objects:  50% (13/26)   Compressing objects:  53% (14/26)   Compressing objects:  57% (15/26)   Compressing objects:  61% (16/26)   Compressing objects:  65% (17/26)   Compressing objects:  69% (18/26)   Compressing objects:  73% (19/26)   Compressing objects:  76% (20/26)   Compressing objects:  80% (21/26)   Compressing objects:  84% (22/26)   Compressing objects:  88% (23/26)   Compressing objects:  92% (24/26)   Compressing objects:  96% (25/26)   Compressing objects: 100% (26/26)   Compressing objects: 100% (26/26), done.
+Writing objects:   3% (1/29)   Writing objects:   6% (2/29)   Writing objects:  10% (3/29)   Writing objects:  13% (4/29)   Writing objects:  17% (5/29)   Writing objects:  20% (6/29)   Writing objects:  24% (7/29)   Writing objects:  27% (8/29)   Writing objects:  31% (9/29)   Writing objects:  34% (10/29)   Writing objects:  37% (11/29)   Writing objects:  41% (12/29)   Writing objects:  44% (13/29)   Writing objects:  48% (14/29)   Writing objects:  51% (15/29)   Writing objects:  55% (16/29)   Writing objects:  58% (17/29)   Writing objects:  62% (18/29)   Writing objects:  65% (19/29)   Writing objects:  68% (20/29)   Writing objects:  72% (21/29)   Writing objects:  75% (22/29)   Writing objects:  79% (23/29)   Writing objects:  82% (24/29)   Writing objects:  86% (25/29)   Writing objects:  89% (26/29)   Writing objects:  93% (27/29)   Writing objects:  96% (28/29)   Writing objects: 100% (29/29)   Writing objects: 100% (29/29), 4.48 KiB | 1.49 MiB/s, done.
+Total 29 (delta 14), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/14)   [Kremote: Resolving deltas:   7% (1/14)   [Kremote: Resolving deltas:  14% (2/14)   [Kremote: Resolving deltas:  21% (3/14)   [Kremote: Resolving deltas:  28% (4/14)   [Kremote: Resolving deltas:  35% (5/14)   [Kremote: Resolving deltas:  42% (6/14)   [Kremote: Resolving deltas:  50% (7/14)   [Kremote: Resolving deltas:  57% (8/14)   [Kremote: Resolving deltas:  64% (9/14)   [Kremote: Resolving deltas:  71% (10/14)   [Kremote: Resolving deltas:  78% (11/14)   [Kremote: Resolving deltas:  85% (12/14)   [Kremote: Resolving deltas:  92% (13/14)   [Kremote: Resolving deltas: 100% (14/14)   [Kremote: Resolving deltas: 100% (14/14), completed with 14 local objects.[K
+To https://github.com/peleonard/RcppMovStat.git
+   89fc6c4..44b304d  v1.0.1 -> v1.0.1
+[Klzqs-MacBook-Pro:RcppMovStat LZQ$ h[Kgit remote 
+origin
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ tie[K[K[Ktie [K[K[K[Kgit sr[K[Kremote show r[Koriing[K[K[Kgin
+* remote origin
+  Fetch URL: https://github.com/peleonard/RcppMovStat.git
+  Push  URL: https://github.com/peleonard/RcppMovStat.git
+  HEAD branch: master
+  Remote branches:
+    master tracked
+    v1.0.1 tracked
+  Local refs configured for 'git push':
+    master pushes to master (local out of date)
+    v1.0.1 pushes to v1.0.1 (up to date)
+[Klzqs-MacBook-Pro:RcppMovStat LZQ$ cat /Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat.Rcheck/00 check.log
+cat: /Users/LZQ/OneDrive: No such file or directory
+^[[A    ^C
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ pwd
+/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ cd /Users/LZQ/OneDrive - Tulane University/41/R_pkg
+bash: cd: /Users/LZQ/OneDrive: No such file or directory
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ cd /Users/LZQ/OneDrive - Tulane University/41/R_pkg[1P[1@\[1@ [C[C[1P[1@\[1@ 
+bash: cd: /Users/LZQ/OneDrive - Tulane: No such file or directory
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ cd /Users/LZQ/OneDrive\ -\ Tulane University/41/R_pkg\ University/41/R_pkg
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ cd /Users/LZQ/OneDrive\ -\ Tulane\ University/41/R_pkg[1P University/41/R_pkg[2P -[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kcat /Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat.Rcheck/00check.llog[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\ University/41/R_pkg/RcppMovStat.Rcheck/00check.log[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\ - Tulane\ University/41/R_pkg/RcppMovStat.Rcheck/00check.log[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\ Tulane\ University/41/R_pkg/RcppMovStat.Rcheck/00check.log[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+cat: /Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat.Rcheck/00check.log: No such file or directory
+[Klzqs-MacBook-Pro:R_pkg LZQ$ pwd
+/Users/LZQ/OneDrive - Tulane University/41/R_pkg
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ tound [K[K[Kch testthat
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ devtools::use_testthat()
+> 
+[Klzqs-MacBook-Pro:R_pkg LZQ$ pwd
+/Users/LZQ/OneDrive - Tulane University/41/R_pkg
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ gti[K[Kgit [K[K[K[Kit remote show origin
+fatal: Not a git repository (or any of the parent directories): .git
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ git remote
+fatal: Not a git repository (or any of the parent directories): .git
+]0;~/OneDrive - Tulane University/41/R_pkglzqs-MacBook-Pro:R_pkg LZQ$ cd Rc[K[KRcppMovStat
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ gie[K[K[Kcd RcppMovStat[4Pgit remote show origin
+* remote origin
+  Fetch URL: https://github.com/peleonard/RcppMovStat.git
+  Push  URL: https://github.com/peleonard/RcppMovStat.git
+  HEAD branch: master
+  Remote branches:
+    master tracked
+    v1.0.1 tracked
+  Local refs configured for 'git push':
+    master pushes to master (local out of date)
+    v1.0.1 pushes to v1.0.1 (up to date)
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ git che[Keckout -b v1.01[K.2
+M	.Rhistory
+M	.Rproj.user/9A904B88/console06/E9FF60BB
+M	.Rproj.user/9A904B88/console06/E9FF60BB.env
+M	.Rproj.user/9A904B88/console06/INDEX001
+M	.Rproj.user/9A904B88/pcs/files-pane.pper
+M	.Rproj.user/9A904B88/pcs/source-pane.pper
+M	.Rproj.user/9A904B88/pcs/windowlayoutstate.pper
+M	.Rproj.user/9A904B88/persistent-state
+M	.Rproj.user/9A904B88/sources/prop/5097E89B
+M	.Rproj.user/9A904B88/sources/prop/6C70B4C4
+M	.Rproj.user/9A904B88/sources/prop/87446A98
+M	.Rproj.user/9A904B88/sources/prop/INDEX
+M	.Rproj.user/shared/notebooks/paths
+M	DESCRIPTION
+D	src/RcppExports.o
+D	src/RcppMovStat.so
+D	src/leading_na.o
+D	src/movCount.o
+D	src/movCountUE.o
+D	src/movEmean.o
+D	src/movMean.o
+D	src/movMeanUE.o
+D	src/movQt.o
+D	src/movQtUE.o
+D	src/movSum.o
+D	src/movSumUE.o
+D	src/rcpp_hello_world.o
+Switched to a new branch 'v1.0.2'
+]0;~/OneDrive - Tulane University/41/R_pkg/RcppMovStatlzqs-MacBook-Pro:RcppMovStat LZQ$ git add . 
