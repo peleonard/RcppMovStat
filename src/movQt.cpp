@@ -51,7 +51,7 @@ NumericVector
     
     // Declare loop counters, nonNA counter, vector sizes and sum
     int i, k, j, p;
-    auto L = vec.size();
+    int L = vec.size();
     
     // Create vector filled with NA(R version)
     NumericVector rq(L, NumericVector::get_na());
@@ -129,7 +129,7 @@ NumericVector
     
     // Declare loop counters, nonNA counter, vector sizes and sum
     int i, k, j;
-    auto L = vec.size();
+    int L = vec.size();
     
     // Create vector filled with NA(R version)
     NumericVector rq(L, NumericVector::get_na());

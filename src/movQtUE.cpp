@@ -70,7 +70,7 @@ NumericMatrix
     
     // Declare loop counters, nonNA counter, vector sizes and sum
     int i, k, j, p, nrow;
-    auto L = vec.size();
+    int L = vec.size();
     
     // Initial matrix with NA
     nrow = pos[L-1] - pos[0] + 1;
@@ -166,7 +166,7 @@ NumericMatrix
 
     // Declare loop counters, nonNA counter, vector sizes and sum
     int i, k, j, nrow;
-    auto L = vec.size();
+    int L = vec.size();
 
     // Initial matrix with NA
     nrow = pos[L-1] - pos[0] + 1;
