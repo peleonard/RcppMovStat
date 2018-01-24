@@ -4,7 +4,7 @@ Title: Fast Moing Statitics Caculation via Rcpp
 Version: 1.0.1
 Date: 2018-01-06
 Author: Pengfei (Leonard) Li
-Maintainer: Pengfei (Leonard) Li <pli3@tulane.com>
+Maintainer: Pengfei (Leonard) Li <pli3@tulane.cn>
 Description: This is a package providing several efficient functions to 
     calculate common moving(or rolling, running) statitics for both EVENLY and UNEVENLY SPACED Time 
     Series: moving average, moving median, and moving maximum(minimum) . Built on C++, these 
@@ -13,10 +13,8 @@ Description: This is a package providing several efficient functions to
 Imports:
     Rcpp (>= 0.12.14)
 Suggests:
-    caTools, 
-    Rcpp,
-    zoo,
-    testthat
+    caTools,
+    zoo
 License: GPL (>= 2)
 LinkingTo: Rcpp
 RoxygenNote: 6.0.1
