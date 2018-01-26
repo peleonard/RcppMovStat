@@ -1,8 +1,8 @@
 Package: RcppMovStat
 Type: Package
 Title: Fast Moing Statitics Caculation via Rcpp
-Version: 1.0.1
-Date: 2018-01-06
+Version: 1.0.2
+Date: 2018-01-24
 Author: Pengfei (Leonard) Li
 Maintainer: Pengfei (Leonard) Li <pli3@tulane.edu>
 Description: This is a package providing several efficient functions to 
@@ -10,11 +10,10 @@ Description: This is a package providing several efficient functions to
     Series: moving average, moving median, and moving maximum(minimum) . Built on C++, these 
     functions would be apparently more efficient than those written in traditional R and also faster
     than Others written by Rcpp. 
-Imports:
-    Rcpp (>= 0.12.14)
-Suggests:
-    caTools,
-    zoo
 License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.15)
+Suggests: 
+    zoo, 
+    caTools
 LinkingTo: Rcpp
 RoxygenNote: 6.0.1
