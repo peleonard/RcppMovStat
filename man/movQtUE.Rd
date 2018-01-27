@@ -16,8 +16,7 @@ movQtUEr(vec, pos, n = 1L, prob = 0.5, ss = 1L, na_rm = FALSE,
 \item{vec}{A numeric vector.}
 
 \item{pos}{A numeric vector with all integers. Its length must be the SAME as \eqn{vec}.
-N.B. We use integers to represent the (relative) postions of every point.
-The first element MUST BE 1, which is design to follow THE 1-INDEXED RULE of R.}
+N.B. We use integers to represent the (relative) positions of every point.}
 
 \item{n}{An integer: moving window size, with 1 as default}
 
@@ -42,11 +41,11 @@ original vector, and the third column the moving average.
 }
 \description{
 This function returns A matrix: the first column is the position, the second column 
-the input vectorthe, and third column moving quantile_UE of the given vector.
+the input vector, and third column moving quantile_UE of the given vector.
 }
 \details{
-This function is especially designed for Unevenly Spaced Time Series. It is efficient as it herits the 
-similiar routine of \code{movQt}. \cr
+This function is especially designed for Unevenly Spaced Time Series. It is efficient as it inherits the 
+similar routine of \code{movQt}. \cr
 The result is kind of tricky. To make it clear, it is written to return a MATRIX. For instance, the 
 third column of the output of second example is \eqn{2.5, NA, NA, NA, NA, NA, 3.0, NA, NA}. 
 2.5 is the median of 1 and 4, and 4.0 the average of 4. The third column of the output of 

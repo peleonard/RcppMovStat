@@ -14,8 +14,7 @@ movCountUEr(vec, pos, n = 1L, ss = 1L, na_rm = FALSE, sizeD = FALSE)
 \item{vec}{A numeric vector.}
 
 \item{pos}{A numeric vector with all integers. Its length must be the SAME as \eqn{vec}.
-N.B. We use integers to represent the (relative) postions of every point.
-The first element MUST BE 1, which is design to follow THE 1-INDEXED RULE of R.}
+N.B. We use integers to represent the (relative) positions of every point.}
 
 \item{n}{An integer: moving window size, with 1 as default}
 
@@ -38,12 +37,12 @@ original vector, and the third column the moving average.
 }
 \description{
 This function returns A matrix: the first column is the position, the second column 
-the input vectorthe, and third column Moving Count of the given vector. The weight 
+the input vector, and third column Moving Count of the given vector. The weight 
 argument is optional.
 }
 \details{
 This function counts the number of non-missing values for each moving window. It is 
-especially designed for \emph{vec} vector with missing values. Otherwise, it will return a trival 
+especially designed for \emph{vec} vector with missing values. Otherwise, it will return a trivial 
 vector with all elements \emph{n}. \cr
 This function is more helpful than \code{movCount}, as we would have missing values for an Unevenly 
 Spaced Time Series. \cr

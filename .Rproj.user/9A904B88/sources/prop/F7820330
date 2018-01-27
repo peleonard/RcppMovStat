@@ -1,4 +1,5 @@
 {
-    "cursorPosition" : "15,74",
-    "scrollLine" : "1"
+    "cursorPosition" : "62,22",
+    "ignored_words" : "vec,ss,na,NaN,sizeD,RcppRoll,movMean,Rcpp,NumericVector,Nullable\n",
+    "scrollLine" : "0"
 }

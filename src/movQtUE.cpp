@@ -23,12 +23,11 @@ quantile_UE make_quantile_UE(int n, double prob) {
 //' for Unevenly Spaced Time Series 
 //' 
 //' @description This function returns A matrix: the first column is the position, the second column 
-//' the input vectorthe, and third column moving quantile_UE of the given vector. 
+//' the input vector, and third column moving quantile_UE of the given vector. 
 //'
 //' @param vec A numeric vector.
 //' @param pos A numeric vector with all integers. Its length must be the SAME as \eqn{vec}.
-//' N.B. We use integers to represent the (relative) postions of every point.
-//' The first element MUST BE 1, which is design to follow THE 1-INDEXED RULE of R.
+//' N.B. We use integers to represent the (relative) positions of every point.
 //' 
 //' @param n An integer: moving window size, with 1 as default
 //' @param prob A number: between \emph{0} and \emph{1}, meaning \emph{prob} quantile_UE
@@ -42,8 +41,8 @@ quantile_UE make_quantile_UE(int n, double prob) {
 //' 
 //' 
 //' @details
-//' This function is especially designed for Unevenly Spaced Time Series. It is efficient as it herits the 
-//' similiar routine of \code{movQt}. \cr
+//' This function is especially designed for Unevenly Spaced Time Series. It is efficient as it inherits the 
+//' similar routine of \code{movQt}. \cr
 //' The result is kind of tricky. To make it clear, it is written to return a MATRIX. For instance, the 
 //' third column of the output of second example is \eqn{2.5, NA, NA, NA, NA, NA, 3.0, NA, NA}. 
 //' 2.5 is the median of 1 and 4, and 4.0 the average of 4. The third column of the output of 
@@ -69,10 +68,12 @@ NumericMatrix
         bool na_rm = false, bool sizeD = false, std::string align = "left") {
     
     // Declare loop counters, nonNA counter, vector sizes and sum
-    int i, k, j, p, nrow;
+    int i, k, j, p, nrow, pos_init;
     int L = vec.size();
     
     // Initial matrix with NA
+    pos_init = pos[0];
+    pos = pos - pos_init + 1;
     nrow = pos[L-1] - pos[0] + 1;
     NumericMatrix posVecRq(nrow, 3); //A matrix with 3 columns: pos, vec and moving average
     NumericVector NAvec(nrow, NumericVector::get_na());
@@ -138,6 +139,8 @@ NumericMatrix
         }
       } 
     }
+    posVecRq(_, 0) = posVecRq(_, 0) + pos_init - 1; 
+    
     if (sizeD) {
       int nrow1;
       nrow1 = (nrow - n + 1 + ss - 1)/ss;
@@ -165,10 +168,12 @@ NumericMatrix
            bool na_rm = false, bool sizeD = false) {
 
     // Declare loop counters, nonNA counter, vector sizes and sum
-    int i, k, j, nrow;
+    int i, k, j, nrow, pos_init;
     int L = vec.size();
 
     // Initial matrix with NA
+    pos_init = pos[0];
+    pos = pos - pos_init + 1;
     nrow = pos[L-1] - pos[0] + 1;
     NumericMatrix posVecRq(nrow, 3); //A matrix with 3 columns: pos, vec and moving average
     NumericVector NAvec(nrow, NumericVector::get_na());
@@ -223,7 +228,8 @@ NumericMatrix
         }
       }
     }
-
+    posVecRq(_, 0) = posVecRq(_, 0) + pos_init - 1; 
+    
     if (sizeD) {
       int nrow1;
       nrow1 = (nrow - n + 1 + ss - 1)/ss;

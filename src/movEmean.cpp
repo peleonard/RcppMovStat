@@ -14,7 +14,7 @@ using namespace Rcpp;
 //' 
 //' 
 //' @details
-//' This function makes fairly efficient the computaion of EMA, which dubbed as basic 
+//' This function makes fairly efficient the computation of EMA, which dubbed as basic 
 //' exponential smoothing, the same section of \url{https://en.wikipedia.org/wiki/Exponential_smoothing}.
 //' It provides an access to define \emph{smFac} yourself, i.e the smoothing factor, 
 //' whose default is \eqn{2/(n+1)}.

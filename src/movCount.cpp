@@ -21,7 +21,7 @@ using namespace Rcpp;
 //' 
 //' 
 //' @details This function counts the number of non-missing values for each moving window. It is 
-//' especially designed for \emph{vec} vector with missing values. Otherwise, it will return a trival 
+//' especially designed for \emph{vec} vector with missing values. Otherwise, it will return a trivial 
 //' vector with all elements \emph{n}.
 //' 
 //' 

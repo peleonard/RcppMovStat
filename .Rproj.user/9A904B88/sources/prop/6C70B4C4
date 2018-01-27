@@ -1,5 +1,7 @@
 {
-    "cursorPosition" : "19,74",
+    "cursorPosition" : "56,75",
+    "docOutlineVisible" : "0",
+    "ignored_words" : "vec,pos,ss,na,NaN,sizeD,movMean,th,nrow,movMeanUEr,movMeanUE,rnorm,Rcpp\n",
     "scrollLine" : "0",
     "tempName" : "Untitled1"
 }
