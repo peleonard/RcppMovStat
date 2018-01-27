@@ -1,6 +1,6 @@
 Package: RcppMovStat
 Type: Package
-Title: Fast Moving Statistics Calculation via package Rcpp
+Title: Fast Moving Statistics Calculation via Package Rcpp
 Version: 1.0.2
 Date: 2018-01-24
 Author: Pengfei (Leonard) Li
