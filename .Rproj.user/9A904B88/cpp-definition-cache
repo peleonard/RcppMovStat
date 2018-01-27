@@ -21,7 +21,7 @@
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movCount.cpp",
-        "file_last_write" : 1516074255
+        "file_last_write" : 1517013510
     },
     {
         "definitions" : [
@@ -29,7 +29,7 @@
                 "column" : 3,
                 "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movCountUE.cpp",
                 "kind" : 6,
-                "line" : 56,
+                "line" : 55,
                 "name" : "movCountUE(NumericVector, NumericVector, int, int, bool, bool, std::string)",
                 "parent_name" : "",
                 "usr" : "c:@F@movCountUE#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#I#I#b#b#$@N@std@N@__1@C@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@C@allocator>#C#"
@@ -38,14 +38,14 @@
                 "column" : 3,
                 "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movCountUE.cpp",
                 "kind" : 6,
-                "line" : 145,
+                "line" : 143,
                 "name" : "movCountUEr(NumericVector, NumericVector, int, int, bool, bool)",
                 "parent_name" : "",
                 "usr" : "c:@F@movCountUEr#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#I#I#b#b#"
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movCountUE.cpp",
-        "file_last_write" : 1516074687
+        "file_last_write" : 1517013255
     },
     {
         "definitions" : [
@@ -60,7 +60,7 @@
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movEmean.cpp",
-        "file_last_write" : 1515622340
+        "file_last_write" : 1517013474
     },
     {
         "definitions" : [
@@ -84,7 +84,7 @@
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movMean.cpp",
-        "file_last_write" : 1516074211
+        "file_last_write" : 1517013419
     },
     {
         "definitions" : [
@@ -92,7 +92,7 @@
                 "column" : 1,
                 "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movMeanUE.cpp",
                 "kind" : 6,
-                "line" : 61,
+                "line" : 62,
                 "name" : "movMeanUE(NumericVector, NumericVector, int, int, Nullable<NumericVector>, bool, bool, std::string)",
                 "parent_name" : "",
                 "usr" : "c:@F@movMeanUE#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#I#I#$@N@Rcpp@C@Nullable>#S0_#b#b#$@N@std@N@__1@C@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@C@allocator>#C#"
@@ -101,14 +101,14 @@
                 "column" : 1,
                 "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movMeanUE.cpp",
                 "kind" : 6,
-                "line" : 170,
+                "line" : 175,
                 "name" : "movMeanUEr(NumericVector, NumericVector, int, int, Nullable<NumericVector>, bool, bool)",
                 "parent_name" : "",
                 "usr" : "c:@F@movMeanUEr#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#I#I#$@N@Rcpp@C@Nullable>#S0_#b#b#"
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movMeanUE.cpp",
-        "file_last_write" : 1516074598
+        "file_last_write" : 1517014395
     },
     {
         "definitions" : [
@@ -132,7 +132,7 @@
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movQt.cpp",
-        "file_last_write" : 1516327592
+        "file_last_write" : 1517013608
     },
     {
         "definitions" : [
@@ -158,7 +158,7 @@
                 "column" : 3,
                 "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movQtUE.cpp",
                 "kind" : 6,
-                "line" : 68,
+                "line" : 67,
                 "name" : "movQtUE(NumericVector, NumericVector, int, double, int, bool, bool, std::string)",
                 "parent_name" : "",
                 "usr" : "c:@F@movQtUE#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#I#d#I#b#b#$@N@std@N@__1@C@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@C@allocator>#C#"
@@ -167,14 +167,14 @@
                 "column" : 3,
                 "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movQtUE.cpp",
                 "kind" : 6,
-                "line" : 164,
+                "line" : 167,
                 "name" : "movQtUEr(NumericVector, NumericVector, int, double, int, bool, bool)",
                 "parent_name" : "",
                 "usr" : "c:@F@movQtUEr#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#I#d#I#b#b#"
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movQtUE.cpp",
-        "file_last_write" : 1516328227
+        "file_last_write" : 1517013121
     },
     {
         "definitions" : [
@@ -206,7 +206,7 @@
                 "column" : 3,
                 "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movSumUE.cpp",
                 "kind" : 6,
-                "line" : 60,
+                "line" : 59,
                 "name" : "movSumUE(NumericVector, NumericVector, int, int, Nullable<NumericVector>, bool, bool, std::string)",
                 "parent_name" : "",
                 "usr" : "c:@F@movSumUE#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#I#I#$@N@Rcpp@C@Nullable>#S0_#b#b#$@N@std@N@__1@C@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@C@allocator>#C#"
@@ -215,14 +215,14 @@
                 "column" : 3,
                 "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movSumUE.cpp",
                 "kind" : 6,
-                "line" : 160,
+                "line" : 162,
                 "name" : "movSumUEr(NumericVector, NumericVector, int, int, Nullable<NumericVector>, bool, bool)",
                 "parent_name" : "",
                 "usr" : "c:@F@movSumUEr#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#I#I#$@N@Rcpp@C@Nullable>#S0_#b#b#"
             }
         ],
         "file" : "/Users/LZQ/OneDrive - Tulane University/41/R_pkg/RcppMovStat/src/movSumUE.cpp",
-        "file_last_write" : 1516074680
+        "file_last_write" : 1517013316
     },
     {
         "definitions" : [

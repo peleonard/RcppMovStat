@@ -37,8 +37,8 @@ length of \eqn{vec}.
 This function returns a moving quantile of the given vector.
 }
 \details{
-Despite of Efficient computation, this function can return differents kinds of moving quantile,
-e.g. moving median(\eqn{prob = 0.5}), moving minimun(\eqn{prob = 0}), 
+Despite of Efficient computation, this function can return different kinds of moving quantile,
+e.g. moving median(\eqn{prob = 0.5}), moving minimum(\eqn{prob = 0}), 
 and moving maximum(\eqn{prob = 1}). It can handle potential 
 missing values(\emph{NA} or \emph{NaN}) in the \emph{vec}. When we move to one specific fragment, missing 
 values can be removed by setting \eqn{na_rm = TRUERUE}. If all values of this fragment is missing, 

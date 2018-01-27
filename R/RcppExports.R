@@ -20,7 +20,7 @@
 #' 
 #' 
 #' @details This function counts the number of non-missing values for each moving window. It is 
-#' especially designed for \emph{vec} vector with missing values. Otherwise, it will return a trival 
+#' especially designed for \emph{vec} vector with missing values. Otherwise, it will return a trivial 
 #' vector with all elements \emph{n}.
 #' 
 #' 
@@ -49,13 +49,12 @@ movCountr <- function(vec, n = 1L, ss = 1L, na_rm = FALSE, sizeD = FALSE) {
 #' 
 #' 
 #' @description This function returns A matrix: the first column is the position, the second column 
-#' the input vectorthe, and third column Moving Count of the given vector. The weight 
+#' the input vector, and third column Moving Count of the given vector. The weight 
 #' argument is optional. 
 #'
 #' @param vec A numeric vector.
 #' @param pos A numeric vector with all integers. Its length must be the SAME as \eqn{vec}.
-#' N.B. We use integers to represent the (relative) postions of every point.
-#' The first element MUST BE 1, which is design to follow THE 1-INDEXED RULE of R.
+#' N.B. We use integers to represent the (relative) positions of every point.
 #' 
 #' @param n An integer: moving window size, with 1 as default
 #' @param ss An integer: step size, only calculating at points with an equal distance \emph{ss}.
@@ -67,7 +66,7 @@ movCountr <- function(vec, n = 1L, ss = 1L, na_rm = FALSE, sizeD = FALSE) {
 #' "left", "middle", "right"
 #' 
 #' @details This function counts the number of non-missing values for each moving window. It is 
-#' especially designed for \emph{vec} vector with missing values. Otherwise, it will return a trival 
+#' especially designed for \emph{vec} vector with missing values. Otherwise, it will return a trivial 
 #' vector with all elements \emph{n}. \cr
 #' This function is more helpful than \code{movCount}, as we would have missing values for an Unevenly 
 #' Spaced Time Series. \cr
@@ -117,7 +116,7 @@ movCountUEr <- function(vec, pos, n = 1L, ss = 1L, na_rm = FALSE, sizeD = FALSE)
 #' 
 #' 
 #' @details
-#' This function makes fairly efficient the computaion of EMA, which dubbed as basic 
+#' This function makes fairly efficient the computation of EMA, which dubbed as basic 
 #' exponential smoothing, the same section of \url{https://en.wikipedia.org/wiki/Exponential_smoothing}.
 #' It provides an access to define \emph{smFac} yourself, i.e the smoothing factor, 
 #' whose default is \eqn{2/(n+1)}.
@@ -159,8 +158,8 @@ movEmean <- function(vec, n = 1L, smFac = NULL) {
 #' Despite of Efficient computation, usually 5~6 times faster than the moving average function in 
 #' package \code{\link[RcppRoll]{roll_mean}}, it is able to handle potential missing values
 #' (\emph{NA} or \emph{NaN}) in the \emph{vec}. \cr
-#' For instace, the output of the second examle is \eqn{NA, NA, 2.200000 3.714286 4.875000}. The 
-#' last number \eqn{5.5} is obtained by using renormalized weight, namely omitting \eqn{0.2}.
+#' For instance, the output of the second example is \eqn{NA, NA, 2.200000 3.714286 4.875000}. The 
+#' last number \eqn{5.5} is obtained by using re-normalized weight, namely omitting \eqn{0.2}.
 #' The weight applied would be \eqn{0.5/(0.5+0.3)} and \eqn{0.3/(0.5+0.3)}. Hence, 
 #' \deqn{4.875 = 3 * 0.5/(0.5+0.3) + 8 * 0.3/(0.5+0.3)}
 #' 
@@ -190,13 +189,12 @@ movMeanr <- function(vec, n = 1L, ss = 1L, w = NULL, na_rm = FALSE, sizeD = FALS
 #' 
 #' 
 #' @description This function returns A matrix: the first column is the position, the second column 
-#' the input vectorthe, and third column simple moving average of the given vector. The weight 
+#' the input vector, and third column simple moving average of the given vector. The weight 
 #' argument is optional. 
 #'
 #' @param vec A numeric vector.
 #' @param pos A numeric vector with all integers. Its length must be the SAME as \eqn{vec}.
-#' N.B. We use integers to represent the (relative) postions of every point.
-#' The first element MUST BE 1, which is design to follow THE 1-INDEXED RULE of R.
+#' N.B. We use integers to represent the (relative) potions of every point.
 #' 
 #' @param n An integer: moving window size, with 1 as default
 #' @param ss An integer: step size, only calculating at points with an equal distance \emph{ss}.
@@ -211,8 +209,8 @@ movMeanr <- function(vec, n = 1L, ss = 1L, w = NULL, na_rm = FALSE, sizeD = FALS
 #' 
 #' 
 #' @details
-#' This function is especially designed for Unevenly Spaced Time Series. It is efficient as it herits the 
-#' similiar routine of \code{movMean}. \cr
+#' This function is especially designed for Unevenly Spaced Time Series. It is efficient as it inherits the 
+#' similar routine of \code{movMean}. \cr
 #' The result is kind of tricky. To make it clear, it is written to return a MATRIX. For instance, the 
 #' third column of the output of second example is \eqn{NA, 2.5, 4.0, NA, NA, NA, 3.0, 3.0, 8.0}. 
 #' 2.5 is the average of 1 and 4, and 4.0 the average of 4. The third column of the output of 
@@ -239,6 +237,8 @@ movMeanr <- function(vec, n = 1L, ss = 1L, w = NULL, na_rm = FALSE, sizeD = FALS
 #' na_rm = TRUE)
 #' movMeanUEr(c(1, 4, 3, NA, 8), pos = c(1, 2, 7, 8, 9), n = 2, ss = 3, na_rm = TRUE, 
 #' sizeD = TRUE)
+#' movMeanUE(rnorm(50), pos = sort(sample(1:100, 50, replace = FALSE)),  n = 5, 
+#' ss = 10, na_rm = TRUE, align = "right")
 #' @export
 movMeanUE <- function(vec, pos, n = 1L, ss = 1L, w = NULL, na_rm = FALSE, sizeD = FALSE, align = "left") {
     .Call(`_RcppMovStat_movMeanUE`, vec, pos, n, ss, w, na_rm, sizeD, align)
@@ -270,8 +270,8 @@ movMeanUEr <- function(vec, pos, n = 1L, ss = 1L, w = NULL, na_rm = FALSE, sizeD
 #' 
 #' 
 #' @details
-#' Despite of Efficient computation, this function can return differents kinds of moving quantile,
-#' e.g. moving median(\eqn{prob = 0.5}), moving minimun(\eqn{prob = 0}), 
+#' Despite of Efficient computation, this function can return different kinds of moving quantile,
+#' e.g. moving median(\eqn{prob = 0.5}), moving minimum(\eqn{prob = 0}), 
 #' and moving maximum(\eqn{prob = 1}). It can handle potential 
 #' missing values(\emph{NA} or \emph{NaN}) in the \emph{vec}. When we move to one specific fragment, missing 
 #' values can be removed by setting \eqn{na_rm = TRUERUE}. If all values of this fragment is missing, 
@@ -304,12 +304,11 @@ movQtr <- function(vec, n = 1L, prob = .5, ss = 1L, na_rm = FALSE, sizeD = FALSE
 #' for Unevenly Spaced Time Series 
 #' 
 #' @description This function returns A matrix: the first column is the position, the second column 
-#' the input vectorthe, and third column moving quantile_UE of the given vector. 
+#' the input vector, and third column moving quantile_UE of the given vector. 
 #'
 #' @param vec A numeric vector.
 #' @param pos A numeric vector with all integers. Its length must be the SAME as \eqn{vec}.
-#' N.B. We use integers to represent the (relative) postions of every point.
-#' The first element MUST BE 1, which is design to follow THE 1-INDEXED RULE of R.
+#' N.B. We use integers to represent the (relative) positions of every point.
 #' 
 #' @param n An integer: moving window size, with 1 as default
 #' @param prob A number: between \emph{0} and \emph{1}, meaning \emph{prob} quantile_UE
@@ -323,8 +322,8 @@ movQtr <- function(vec, n = 1L, prob = .5, ss = 1L, na_rm = FALSE, sizeD = FALSE
 #' 
 #' 
 #' @details
-#' This function is especially designed for Unevenly Spaced Time Series. It is efficient as it herits the 
-#' similiar routine of \code{movQt}. \cr
+#' This function is especially designed for Unevenly Spaced Time Series. It is efficient as it inherits the 
+#' similar routine of \code{movQt}. \cr
 #' The result is kind of tricky. To make it clear, it is written to return a MATRIX. For instance, the 
 #' third column of the output of second example is \eqn{2.5, NA, NA, NA, NA, NA, 3.0, NA, NA}. 
 #' 2.5 is the median of 1 and 4, and 4.0 the average of 4. The third column of the output of 
@@ -406,13 +405,12 @@ movSumr <- function(vec, n = 1L, ss = 1L, w = NULL, na_rm = FALSE, sizeD = FALSE
 #' 
 #' 
 #' @description This function returns A matrix: the first column is the position, the second column 
-#' the input vectorthe, and third column moving sum of the given vector. The weight 
+#' the input vector, and third column moving sum of the given vector. The weight 
 #' argument is optional. 
 #'
 #' @param vec A numeric vector.
 #' @param pos A numeric vector with all integers. Its length must be the SAME as \eqn{vec}.
-#' N.B. We use integers to represent the (relative) postions of every point.
-#' The first element MUST BE 1, which is design to follow THE 1-INDEXED RULE of R.
+#' N.B. We use integers to represent the (relative) positions of every point.
 #' 
 #' @param n An integer: moving window size, with 1 as default
 #' @param ss An integer: step size, only calculating at points with an equal distance \emph{ss}.

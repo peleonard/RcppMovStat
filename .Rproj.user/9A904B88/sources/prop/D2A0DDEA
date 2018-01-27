@@ -1,5 +1,6 @@
 {
-    "cursorPosition" : "150,35",
-    "scrollLine" : "140",
+    "cursorPosition" : "53,13",
+    "ignored_words" : "movCountUEr,pos,na,movCountUE,ss,sizeD,Rcpp,vec,NaN,movCount,movMeanUE,nrow\n",
+    "scrollLine" : "0",
     "tempName" : "Untitled1"
 }

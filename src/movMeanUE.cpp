@@ -6,13 +6,12 @@ using namespace Rcpp;
 //' 
 //' 
 //' @description This function returns A matrix: the first column is the position, the second column 
-//' the input vectorthe, and third column simple moving average of the given vector. The weight 
+//' the input vector, and third column simple moving average of the given vector. The weight 
 //' argument is optional. 
 //'
 //' @param vec A numeric vector.
 //' @param pos A numeric vector with all integers. Its length must be the SAME as \eqn{vec}.
-//' N.B. We use integers to represent the (relative) postions of every point.
-//' The first element MUST BE 1, which is design to follow THE 1-INDEXED RULE of R.
+//' N.B. We use integers to represent the (relative) potions of every point.
 //' 
 //' @param n An integer: moving window size, with 1 as default
 //' @param ss An integer: step size, only calculating at points with an equal distance \emph{ss}.
@@ -27,8 +26,8 @@ using namespace Rcpp;
 //' 
 //' 
 //' @details
-//' This function is especially designed for Unevenly Spaced Time Series. It is efficient as it herits the 
-//' similiar routine of \code{movMean}. \cr
+//' This function is especially designed for Unevenly Spaced Time Series. It is efficient as it inherits the 
+//' similar routine of \code{movMean}. \cr
 //' The result is kind of tricky. To make it clear, it is written to return a MATRIX. For instance, the 
 //' third column of the output of second example is \eqn{NA, 2.5, 4.0, NA, NA, NA, 3.0, 3.0, 8.0}. 
 //' 2.5 is the average of 1 and 4, and 4.0 the average of 4. The third column of the output of 
@@ -55,6 +54,8 @@ using namespace Rcpp;
 //' na_rm = TRUE)
 //' movMeanUEr(c(1, 4, 3, NA, 8), pos = c(1, 2, 7, 8, 9), n = 2, ss = 3, na_rm = TRUE, 
 //' sizeD = TRUE)
+//' movMeanUE(rnorm(50), pos = sort(sample(1:100, 50, replace = FALSE)),  n = 5, 
+//' ss = 10, na_rm = TRUE, align = "right")
 //' @export
 // [[Rcpp::export]]
 NumericMatrix
@@ -62,7 +63,7 @@ movMeanUE(NumericVector vec, NumericVector pos, int n = 1L, int ss = 1L, Nullabl
         bool na_rm = false, bool sizeD = false, std::string align = "left") {
 
   // Declare loop counts, nonNA count, size of vec(or pos), number of rows of matrix,  alignment position
-  int i, j, k, n1 = 0, L = vec.size(), nrow, p;
+  int i, j, k, n1 = 0, L = vec.size(), nrow, p, pos_init;
   // Declare three sums: sum, sum w/ weight, sum w/ weight and NA in vec
   double sum = 0.0, sum_wt, sum_wtNA;
 
@@ -70,6 +71,8 @@ movMeanUE(NumericVector vec, NumericVector pos, int n = 1L, int ss = 1L, Nullabl
   NumericVector wt(n, 1.0);
 
   // Initial matrix with NA
+  pos_init = pos[0];
+  pos = pos - pos_init + 1;
   nrow = pos[L-1] - pos[0] + 1;
   NumericMatrix posVecMa(nrow, 3); //A matrix with 3 columns: pos, vec and moving average
   NumericVector NAvec(nrow, NumericVector::get_na());
@@ -141,6 +144,8 @@ movMeanUE(NumericVector vec, NumericVector pos, int n = 1L, int ss = 1L, Nullabl
       posVecMa(i, 2) = sum / sum_wt;
     }
   }
+  
+  posVecMa(_, 0) = posVecMa(_, 0) + pos_init - 1; 
 
   if (sizeD) {
     int nrow1;
@@ -171,7 +176,7 @@ movMeanUEr(NumericVector vec, NumericVector pos, int n = 1L, int ss = 1L,
          Nullable<NumericVector> w = R_NilValue, bool na_rm = false, bool sizeD = false) {
 
   // Declare loop counts, nonNA count, size of vec(or pos), number of rows of matrix
-  int i, j, k, n1 = 0, L = vec.size(), nrow;
+  int i, j, k, n1 = 0, L = vec.size(), nrow, pos_init;
   // Declare three sums: sum, sum w/ weight, sum w/ weight and NA in vec
   double sum = 0.0, sum_wt, sum_wtNA;
 
@@ -179,6 +184,8 @@ movMeanUEr(NumericVector vec, NumericVector pos, int n = 1L, int ss = 1L,
   NumericVector wt(n, 1.0);
 
   // Create matrix filled with NA
+  pos_init = pos[0];
+  pos = pos - pos_init + 1;
   nrow = pos[L-1] - pos[0] + 1;
   NumericMatrix posVecMa(nrow, 3); //A matrix with two vectors: moving average and position
   NumericVector NAvec(nrow, NumericVector::get_na());
@@ -242,6 +249,8 @@ movMeanUEr(NumericVector vec, NumericVector pos, int n = 1L, int ss = 1L,
       posVecMa(i, 2) = sum / sum_wt;
     }
   }
+  
+  posVecMa(_, 0) = posVecMa(_, 0) + pos_init - 1; 
 
   if (sizeD) {
     int nrow1;

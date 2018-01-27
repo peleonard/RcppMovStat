@@ -1,4 +1,5 @@
 {
-    "cursorPosition" : "22,73",
+    "cursorPosition" : "23,4",
+    "ignored_words" : "vec,movEmean,smFac,Rcpp,NumericVector,Nullable,NilValue,https,wikipedia\n",
     "scrollLine" : "0"
 }

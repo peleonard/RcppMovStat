@@ -1,4 +1,5 @@
 {
-    "cursorPosition" : "191,60",
+    "cursorPosition" : "15,62",
+    "ignored_words" : "quantile,NaN,vec,na,ss,sizeD\n",
     "scrollLine" : "0"
 }

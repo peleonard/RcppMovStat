@@ -10,7 +10,7 @@
         "-fPIC",
         "-std=c++11"
     ],
-    "hash" : "1516240486",
+    "hash" : "1517012540",
     "is_cpp" : true,
     "pch" : "Rcpp"
 }

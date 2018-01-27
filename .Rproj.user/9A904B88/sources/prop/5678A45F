@@ -1,5 +1,6 @@
 {
-    "cursorPosition" : "30,79",
+    "cursorPosition" : "57,13",
+    "ignored_words" : "movSumUE,vec,pos,ss,na,NaN,sizeD,movMeanUE,nrow,movSumUEr,Rcpp\n",
     "scrollLine" : "0",
     "tempName" : "Untitled1"
 }

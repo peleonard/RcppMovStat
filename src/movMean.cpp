@@ -26,8 +26,8 @@ using namespace Rcpp;
 //' Despite of Efficient computation, usually 5~6 times faster than the moving average function in 
 //' package \code{\link[RcppRoll]{roll_mean}}, it is able to handle potential missing values
 //' (\emph{NA} or \emph{NaN}) in the \emph{vec}. \cr
-//' For instace, the output of the second examle is \eqn{NA, NA, 2.200000 3.714286 4.875000}. The 
-//' last number \eqn{5.5} is obtained by using renormalized weight, namely omitting \eqn{0.2}.
+//' For instance, the output of the second example is \eqn{NA, NA, 2.200000 3.714286 4.875000}. The 
+//' last number \eqn{5.5} is obtained by using re-normalized weight, namely omitting \eqn{0.2}.
 //' The weight applied would be \eqn{0.5/(0.5+0.3)} and \eqn{0.3/(0.5+0.3)}. Hence, 
 //' \deqn{4.875 = 3 * 0.5/(0.5+0.3) + 8 * 0.3/(0.5+0.3)}
 //' 
