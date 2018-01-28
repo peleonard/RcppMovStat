@@ -1,10 +1,10 @@
 # RcppMovStat
 
-This is a package providing several efficient functions to 
-    calculate common moving(or rolling, running) statistics for both EVENLY and UNEVENLY SPACED Time 
-    Series: moving average, moving median, and moving maximum(minimum) . Built on C++, these 
-    functions would be apparently more efficient than those written in traditional R and even faster
-    than Others written by Rcpp. 
+This package provides several efficient functions to 
+    calculate common moving (or rolling, running) statistics for both evenly and unevenly spaced time 
+    series: moving average, moving median, and moving maximum (minimum). Built on 'C++', these 
+    functions are apparently more efficient than those written in a traditional 'R' way and also faster
+    than Others written using package 'Rcpp'. 
     
 Install me with devtools:
 
