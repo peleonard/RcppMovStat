@@ -40,7 +40,7 @@ argument is optional.
 }
 \details{
 Despite of Efficient computation, usually 5~6 times faster than the moving average function in 
-package \code{\link[RcppRoll]{roll_mean}}, it is able to handle potential missing values
+package 'RcppRoll', it is able to handle potential missing values
 (\emph{NA} or \emph{NaN}) in the \emph{vec}. \cr
 For instance, the output of the second example is \eqn{NA, NA, 2.200000 3.714286 4.875000}. The 
 last number \eqn{5.5} is obtained by using re-normalized weight, namely omitting \eqn{0.2}.
